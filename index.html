@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Angular from scratch</title>
+
+	<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+	<meta name="author" content="Antoine CARON">
+
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+	<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+	<div class="reveal">
+
+		<!-- Any section element inside of this container is displayed as a slide -->
+		<div class="slides">
+			<section>
+				<img src="img/angularjs-logo.png" height="100">
+				<h1>Angular from scratch</h1>
+				<h3>Le framework front par Google</h3>
+				<p>
+					<small>Par <a href="http://www.antoinecaron.ovh">Antoine CARON</a> / <a href="http://twitter.com/Slashgear_">@Slashgear_</a></small>
+				</p>
+			</section>
+
+			<section>
+				<h2>Objectif</h2>
+				<ul>
+					<li>Décourvrir le framework AngularJS 1.5.</li>
+					<li>Mettre un pied dans le monde du développement Front en Javascript.</li>
+					<li>Comprendre comment apprendre seul ?</li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Avant-Propos</h2>
+				<p>Cette présentation a été réalisée grâce à <a href="https://github.com/hakimel/reveal.js">Reveal.js</a></p>
+				<p>Il existe une version avec interface graphique <a href="http://www.slidesjs.com/"> Slide.js</a></p>
+				<p>C'est OpenSource, c'est beau, c'est bien, mangez-en !</p>
+			</section>
+
+			<section>
+				<h2>Késako</h2>
+				<ul>
+					<li>Framework Front écrit en Javascript et compatible tout navigateur (IE >8)</li>
+					<li>Clientside Rendering</li>
+					<li>Webservices</li>
+					<li>Décomposition en <a href="http://webcomponents.org/">web-composants</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<section>
+					<h2>Comment va-t-on procéder ?</h2>
+					<ul>
+						<li>Une recette</li>
+						<li>Live Coding</li>
+						<li>De plus en plus dans les détails, de plus en plus d'outils</li>
+					</ul>
+				</section>
+				<section>
+					<h2>La recette</h2>
+					<img src="img/atom.png">
+					<ul>
+						<li>Un bon outils : <a href="https://atom.io/">Atom</a></li>
+						<li>Un bon <a href="https://github.com/johnpapa/angular-styleguide">styleguide</a>, pour éviter de faire n'importe quoi</li>
+						<li>Des bons plugins : <a href="https://atom.io/packages/angularjs-styleguide-snippets">John Papa Snippets</a>, <a href="https://atom.io/packages/atom-beautify">Atom Beautify</a>, et tous ceux que vous voulez</li>
+						<li>Internet pour les documentations</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Aller c'est parti !!</h2>
+				</section>
+			</section>
+
+			<section>
+				<h2>Etape 0 : la base d'Angular</h2>
+				<p><a href="/steps/v0/index.html" target="_blank">Exemple</a></p>
+			</section>
+			<section>
+				<section>
+					<h2>Etape 1 : Une application hyper simpliste</h2>
+					<p><a href="/steps/v1/index.html" target="_blank">Exemple</a></p>
+				</section>
+				<section>
+					<h2>C'est le bordel</h2>
+					<ul>
+						<li>Trop d'imports.</li>
+						<li>Des librairies sans moyen de les manager.</li>
+						<li>Aucune automatisation de tâche</li>
+						<li>Obligé de refresh la page</li>
+						<li>Les performances</li>
+						<li>Aucun server de développement</li>
+					</ul>
+				</section>
+				<section>
+					<h2>NodeJs et NPM</h2>
+					<h3>Et hop !  un gestionnaire de packages (Développement)</h3>
+					<img src="img/node_npm.png">
+				</section>
+				<section>
+					<h2>Bower</h2>
+					<h3>La solution pour les dépendances Web (CSS,JS,Fonts)</h3>
+					<img src="img/bower.png">
+				</section>
+				<section>
+					<h2>Gulp et Grunt</h2>
+					<h3>Enfin de quoi automatiser des tâches</h3>
+					<img src="img/gulp_grunt.png">
+					<ul>
+						<li>Minification de code</li>
+						<li>Création d'un micro-server de développement</li>
+						<li>Livereload (OMG !!)</li>
+						<li>Auto-ajout des dépendances Bower</li>
+						<ul>
+				</section>
+				<section>
+					<h2>Karma et Jasmine</h2>
+					<h3>Et oui! Il faut aussi faire des tests unitaires.</h3>
+					<img src="img/karma.png">
+				</section>
+				<section>
+					<p>* Heuuuu moi j'étais venu voir AngularJS, je voulais pas voir 5000 technos, comment je fais pour initier un projet avec tout ça *</p>
+				</section>
+				<section>
+					<img src="img/yeoman.png">
+				</section>
+			</section>
+
+			<section>
+				<h2>Etape 2 : Un projet qui tient plus la route</h2>
+				<p>Un générateur qui nous prémache le travaille <a href="https://github.com/Swiip/generator-gulp-angular" target="_blank">ici</a><p>
+				<p><a href="/steps/v2/index.html" target="_blank">Exemple</a></p>
+			</section>
+
+			<section>
+				<h2>Aller plus loin</h2>
+				<p>La documentation d'<a href="https://angularjs.org/">AngularJS</a>, les outils comme <a href="http://bower.io/">Bower</a>, <a href="http://gruntjs.com/">Grunt</a>, <a href="http://gulpjs.com/">Gulp</a>, <a href="http://yeoman.io/">Yeoman</a></p>
+				<p>Un bon générateur <a href="https://github.com/Swiip/generator-gulp-angular">gulp-angular</a></p>
+				<p><a href="https://angular.io/">Angular 2</a> (beta), le <a href="http://www.typescriptlang.org/">TypeScript</a>, ES2015</p>
+			</section>
+
+			<section>
+				<h2>Les gens à suivre</h2>
+				<ul>
+					<li><a href="https://twitter.com/John_Papa">John Papa</a>, du John Papa's Styleguide</li>
+					<li>Matthieu Lux, aka <a href="https://twitter.com/Swiip">@Swiip</a></li>
+					<li>Le compte <a href="https://twitter.com/angular">@angular</a></li>
+					<li>Mon compte <a href="https://twitter.com/Slashgear_">@Slashgear_</a></li>
+				</ul>
+			</section>
+
+			<section>
+				<h2>Merci pour votre attention ! </h2>
+			</section>
+		</div>
+
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// Full list of configuration options available at:
+		// https://github.com/hakimel/reveal.js#configuration
+		Reveal.initialize({
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+			// Optional reveal.js plugins
+			dependencies: [{
+				src: 'lib/js/classList.js',
+				condition: function() {
+					return !document.body.classList;
+				}
+			}, {
+				src: 'plugin/markdown/marked.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/markdown/markdown.js',
+				condition: function() {
+					return !!document.querySelector('[data-markdown]');
+				}
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function() {
+					hljs.initHighlightingOnLoad();
+				}
+			}, {
+				src: 'plugin/zoom-js/zoom.js',
+				async: true
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}]
+		});
+	</script>
+
+</body>
+
+</html>
