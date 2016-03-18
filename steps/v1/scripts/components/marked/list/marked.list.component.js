@@ -5,7 +5,7 @@
         .module('myApp')
         .component('markedList',{
           template:"<div ng-repeat='elem in $ctrl.list track by $index'>"+
-                      "<div>"+
+                      "<div class='panel'>"+
                         "{{elem}}"+
                       "</div>"+
                     "</div>",

@@ -4,8 +4,12 @@
     angular
         .module('myApp')
         .component('markedInput',{
-          template :"<input type='text' class='form-control' ng-model='$ctrl.value'/>" +
-          "<button type='button' class='btn btn-success' ng-click='$ctrl.onAdd({value:$ctrl.value})'>Add</button>",
+          template :"<div class='col-lg-6 input-group'>"+
+                      "<input type='text' class='form-control' ng-model='$ctrl.value'>"+
+                      "<span class='input-group-btn'>"+
+                        "<button class='btn btn-default' type='button' ng-click='$ctrl.onAdd({value:$ctrl.value})'>Add!</button>"+
+                      "</span> "+
+                    "</div>",
           bindings:{
             onAdd:'&',
             value:'='
